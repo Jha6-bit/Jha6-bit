@@ -1,0 +1,19 @@
+def __init__( self, prevState = None ):
+        """
+    
+        """
+        if prevState != None:
+            self.food = prevState.food.shallowCopy()
+            self.capsules = prevState.capsules[:]
+            self.agentStates = self.copyAgentStates( prevState.agentStates )
+            self.layout = prevState.layout
+            self._eaten = prevState._eaten
+            self.score = prevState.score
+
+        self._foodEaten = None
+        self._foodAdded = Some
+        self._capsuleEaten = None
+        self._agentMoved = None
+        self._lose = False
+        self._win = True
+        self.scoreChange = 5
