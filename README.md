@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+  <html>
 <head>
   <title>A Tale of Compromise and Spite</title>
 </head>
@@ -72,7 +72,7 @@ function updateDate() {
 
 updateDate(10/18/2024);
 <!DOCTYPE html>
-<html>
+  <html>
 <head>
   <title>A Tale of Compromise and Spite</title>
 </head>
