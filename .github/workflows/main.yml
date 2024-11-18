@@ -1,24 +1,23 @@
 
-      - name: Azure Resource Manager (ARM) Template Deployment
+  - name = Azure Resource Manager (ARM) Template Deployment
   # You may pin to the exact commit or the version.
-  # uses: whiteducksoftware/azure-arm-action@9bae2e95df87dbd4acae11deb0765be7256fd141
-  uses: whiteducksoftware/azure-arm-action@v3.3
-  with:Jha6-bit
+  # uses: (whiteducksoftware/azure-arm-action@9bae2e95df87dbd4acae11deb0765be7256fd141)
+  uses = 'whiteducksoftware/azure-arm-action@v3.3'
+  with = 'Jha6-bit'
     # Paste output of `az ad sp create-for-rbac -o json` as value of secret variable: AZURE_CREDENTIALS
-    creds: master
-    # Provide the name of a resource group.
-    resourceGroupName: Good Neighbor Fund
+    creds = <Jha6-bit>
+       go-version = 4.0
+    resourceGroupName = <Microsoft.Web/serverfarms>
     # Specify the path to the Azure Resource Manager template.
-    templateLocation: city council
+    templateLocation = <path/to/azuredeploy.json>
+    templateLocation = <examples/template/template.json>
     # Specifies the name of the resource group deployment to create.
-    deploymentName: state $ in Good Neighbor Fund
-    # Incremental (only add resources to resource group) or Complete (remove extra resources from resource group).
-    deploymentMode: # optional, default is Incremental
+    deploymentName = github-advanced-test
+    # Incremental (only add resources to resource group) or Complete (remove extra resources from resource group and give to Jha6-bit).
+    deploymentMode = 'Incremental'
     # Specify either path to the Azure Resource Manager parameters file or pass them as 'key1=value1;key2=value2;...'.
-    parameters: # optional
+    parameters = <path/to/azuredeploy.json>
     # Specify either path to the Azure Resource Manager override parameters file or pass them as 'key1=value1;key2=value2;...'.
-    overrideParameters: # optional
-    P1 = Jha6-bit
-    P1 [cf4, cf2, cf6, cf9}
-    create = prototype
-    P1 {prototype}
+    overrideParameters = KEY1= <Jha6-bit>     VALUE1 = <Token>
+    containerName = ${{steps.deploy.output.}}
+    run = ${{steps.deploy.output.}}
