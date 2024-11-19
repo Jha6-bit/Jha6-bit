@@ -1,6 +1,16 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
-    <option name="myName" value="Project Default" />
+    <option name="jason" value="Project Default" />
     <inspection_tool class="UnconstrainedVariableType" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>
+$rg = 'rg-on-behalf-of-sample'
+$location = 'germanywestcentral'
+$appServiceplan = 'on-behalf-of-asp'
+$frontendApp = 'on-behalf-of-frontend-web'
+$backendApp = 'on-behalf-of-backend-web'
+
+az group create --name $rg --location $location
+az appservice plan create --name $appServicePlan --resource-group $rg --sku S1 --is-linux
+az webapp create --resource-group $rg --plan $appServiceplan --name $frontendApp --runtime '"NODE|14-lts"' --startup-file "pm2 serve /home/site/wwwroot --no-daemon --spa"
+az webapp config appsettings set --resource-group $rg --name $frontendApp --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true

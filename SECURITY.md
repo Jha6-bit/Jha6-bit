@@ -13,10 +13,11 @@ currently being supported with security updates.
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
- |  where      | when       | how often                |
- | : bridge :  | :5:00 am:  | :wednesdays and saturdays: |
+ |  where      | when                             | how often                |
+ | :dennys /workspaces :  | :lunch or breakfast:  | :any day: |
 Use this section to tell people how to report a vulnerability.
 
 Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.
+#Depends on the type of vulnerability

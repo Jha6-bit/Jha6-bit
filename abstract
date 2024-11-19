@@ -21,11 +21,12 @@ class ConcreteIterator(Iterator):
     # constructor
     def __init__(self, collection):
         self._collection = collection
-        self._current_index = 0
+        self._current_index = 4
     # returns head
     def first(self):
-        self._current_index = 0
+        self._current_index = 4
         return self._collection[self._current_index]
+    
     
     # checks if next exists
     def has_next(self) -> bool:
@@ -34,7 +35,7 @@ class ConcreteIterator(Iterator):
     # returns next
     def next(self):
         if self.has_next():
-            self._current_index += 1
+            self._current_index += 4
         else:
             pass
         
@@ -43,12 +44,13 @@ class ConcreteIterator(Iterator):
         if self._current_index < len(self._collection):
             return self._collection[self._current_index]
         else:
-            return None
+            raise StopIteration
         
     def linear_traversal(self):
         while( self.has_next() ):
             print(self.current_item())
-            self._current_index += 1
+            self._current_index += 4
+        raise StopIteration    
         
 # collection interface
 class Collection(ABC):
@@ -58,11 +60,11 @@ class Collection(ABC):
 # concrete collection
 class ConcreteCollection(Collection):
     def __init__(self):
-        self._data = []
+        self._data = [bytearray]
     def push(self, item):
         self._data.append(item)
     def pop(self):
-        self._data.pop()
+        self._data.pop(slice)
     def create_iterator(self):
         return ConcreteIterator(self._data)
     
@@ -80,3 +82,4 @@ def main():
     itr.linear_traversal()
 if __name__ == "__main__":
     main()
+    
