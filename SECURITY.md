@@ -14,7 +14,7 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
  |  where      | when       | how often                |
- | : parkway :  | :1:00 am:  | :saturdays: |
+ | : parkway :  | :1:00 am:  | :saturdays and wednesdays: |
 Use this section to tell people how to report a vulnerability.
    if vulnerability is found : relocate or terminate
    if terminate : pirahna acid or tire fire or accident
